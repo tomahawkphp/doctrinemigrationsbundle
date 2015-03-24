@@ -1,0 +1,27 @@
+{
+    "name": "tomahawk/doctrinemigrationsbundle",
+    "description": "Doctrine Migrations Bundle for Tomahawk",
+    "keywords": ["doctrine", "migrations", "tomahawk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Ellis",
+            "email": "tellishtc@gmail.com"
+        }
+    ],
+    "config": {
+        "preferred-install": "dist",
+        "bin-dir": "bin",
+        "process-timeout": 10000,
+        "github-protocols": ["https"]
+    },
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tomahawk\\Bundle\\DoctrineMigrationsBundle\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
