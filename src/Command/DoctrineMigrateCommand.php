@@ -1,5 +1,16 @@
 <?php
 
+/*
+ * This file is part of the TomahawkPHP package.
+ *
+ * (c) Tom Ellis
+ *
+ * The code is based off the Doctrine Migrations Bundle by the Doctrine Project
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Tomahawk\Bundle\DoctrineMigrationsBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
@@ -10,6 +21,10 @@ use Doctrine\DBAL\Migrations\Tools\Console\Command\MigrateCommand;
 
 /**
  * Command for executing a migration to a specified version or the latest available version.
+ *
+ * @author Tom Ellis
+ *
+ * Based on the original by:
  *
  * @author Fabien Potencier <fabien@symfony.com>
  * @author Jonathan H. Wage <jonwage@gmail.com>

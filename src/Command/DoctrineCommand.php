@@ -1,5 +1,16 @@
 <?php
 
+/*
+ * This file is part of the TomahawkPHP package.
+ *
+ * (c) Tom Ellis
+ *
+ * The code is based off the Doctrine Migrations Bundle by the Doctrine Project
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Tomahawk\Bundle\DoctrineMigrationsBundle\Command;
 
 use Tomahawk\DI\ContainerInterface;
@@ -11,9 +22,11 @@ use Doctrine\DBAL\Migrations\Configuration\AbstractFileConfiguration;
 /**
  * @author Tom Ellis
  *
- * Based on the original by Fabien Potencier
- *
  * Base class for Doctrine console commands to extend from.
+ *
+ * @author Tom Ellis
+ *
+ * Based on the original by:
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */
@@ -24,7 +37,7 @@ abstract class DoctrineCommand extends BaseCommand
         $config  = $container->get('config');
 
         if (!$configuration->getMigrationsDirectory()) {
-            $dir = $config->get('doctrine.migrations_directories');
+            $dir = $config->get('doctrine.migrations_directory');
 
             if (!file_exists($dir)) {
                 mkdir($dir, 0777, true);

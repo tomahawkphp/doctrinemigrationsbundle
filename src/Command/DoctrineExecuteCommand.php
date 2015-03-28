@@ -1,5 +1,15 @@
 <?php
 
+/*
+ * This file is part of the TomahawkPHP package.
+ *
+ * (c) Tom Ellis
+ *
+ * The code is based off the Doctrine Migrations Bundle by the Doctrine Project
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
 namespace Tomahawk\Bundle\DoctrineMigrationsBundle\Command;
 
 use Symfony\Component\Console\Input\InputInterface;
@@ -9,7 +19,12 @@ use Tomahawk\Bundle\DoctrineBundle\Command\Proxy\CommandHelper;
 use Doctrine\DBAL\Migrations\Tools\Console\Command\ExecuteCommand;
 
 
-/* Command for executing single migrations up or down manually.
+/**
+ * Command for executing single migrations up or down manually.
+ *
+ * @author Tom Ellis
+ *
+ * Based on the original by:
  *
  * @author Fabien Potencier <fabien@symfony.com>
  * @author Jonathan H. Wage <jonwage@gmail.com>
