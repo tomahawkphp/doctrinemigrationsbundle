@@ -8,14 +8,16 @@ This bundle is written to support Semvar.
 
 The following config settings can be set in the doctrine.php config. If they are not set a sensible default is used:
 
-    'migrations_directory' => 'Resources/Doctrine/migrations'
+    'migrations_directory' => 'Resources/Doctrine/migrations',
 
-    'migration_namespace' => 'DoctrineMigrations'
+    'migration_namespace' => 'DoctrineMigrations',
 
-    'migration_name' => 'Migration'
+    'migration_name' => 'Migration',
 
 
-## Install Via Composer
+## Installation
+
+### Install Via Composer
 
 Just add the following to your composer file:
 
