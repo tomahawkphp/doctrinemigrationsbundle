@@ -16,7 +16,8 @@
         "github-protocols": ["https"]
     },
     "require": {
-        "php": ">=5.3.3"
+        "php": ">=5.3.3",
+        "doctrine/migrations": "1.0.*@dev"
     },
     "autoload": {
         "psr-4": {
